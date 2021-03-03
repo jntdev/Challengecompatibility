@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <Link rel="StyleSheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <select name="brand_type" id="brand-type">        
+            <option value="european">European</option>
+            <option value="american">American</option>
+            <option value="asian">Asian</option>
+        </select>
+        <select name="brand_car" id="brand-car" class="firstclick">
+            <option value="chrysler" data-brand-type="american">Chrysler</option>
+            <option value="ford" data-brand-type="american">Ford</option>
+            <option value="honda" data-brand-type="asian">Honda</option>
+            <option value="mercedes" data-brand-type="european">Mercedes-Benz</option>
+            <option value="mitsubishi" data-brand-type="asian">Mitsubishi</option>
+            <option value="mustang" data-brand-type="american">Mustang</option>
+            <option value="peugeot" data-brand-type="european">Peugeot</option>
+            <option value="seat" data-brand-type="european">Seat</option>
+            <option value="toyota" data-brand-type="asian">Toyota</option>
+        </select>
+        <div>
+            La voiture que vous avez choisi est de marque : <span id="brand_choice"></span>
+        </div>
+    </div>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="bin.js"></script>
+</body>
+
+</html>
