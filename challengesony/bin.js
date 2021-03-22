@@ -3,15 +3,10 @@
 
 const html = $('#brand-car').html();
 $('#brand-type').on('change', function() {
-    let value = $(this).val()
-    if ($('#brand-car').hasClass('firstclick')) {
-        console.log("tata");
-        $('#brand-car').append(html - value).removeClass('firstclick');
-        $("#brand-car option:not([data-brand-type=" + value + "])").detach();
-    } else {
-        $('#brand-car').append(html);
-        $("#brand-car option:not([data-brand-type=" + value + "])").detach();
-    }
+    $('#brand-car').html('');
+    let value = $(this).val();
+    $('#brand-car').html(html);
+    $("#brand-car option:not([data-brand-type=" + value + "])").detach();
 });
 
 /* fonction de rappelle du choix */
